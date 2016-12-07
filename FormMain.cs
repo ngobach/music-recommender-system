@@ -189,6 +189,7 @@ namespace DXample
                     {
                         writer.WriteLine("{0} (score = {1})", item.BaiHat, item.DiemSo);
                     }
+                    writer.WriteLine(new string('=', 80));
                     writer.WriteLine("Done writing {0} result(s)", items.Count);
                 }
                 XtraMessageBox.Show(this, "File kết quả được ghi thành công\n" + dlg.FileName, "Success",
