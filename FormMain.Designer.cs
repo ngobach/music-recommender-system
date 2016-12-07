@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            DevExpress.Utils.Animation.PushTransition pushTransition2 = new DevExpress.Utils.Animation.PushTransition();
+            DevExpress.Utils.Animation.PushTransition pushTransition1 = new DevExpress.Utils.Animation.PushTransition();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnOpen = new DevExpress.XtraBars.BarButtonItem();
             this.btnSave = new DevExpress.XtraBars.BarButtonItem();
@@ -72,6 +72,8 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridRelas = new DevExpress.XtraGrid.GridControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.gridResult = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -85,10 +87,8 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
@@ -99,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridRelas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridResult)).BeginInit();
@@ -109,9 +110,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
@@ -158,7 +158,7 @@
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(1096, 146);
+            this.ribbonControl1.Size = new System.Drawing.Size(798, 146);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // btnOpen
@@ -221,7 +221,7 @@
             // workspaceManager1
             // 
             this.workspaceManager1.TargetControl = this;
-            this.workspaceManager1.TransitionType = pushTransition2;
+            this.workspaceManager1.TransitionType = pushTransition1;
             // 
             // barButtonItem10
             // 
@@ -507,10 +507,10 @@
             // 
             // gridRelas
             // 
-            this.gridRelas.Location = new System.Drawing.Point(12, 201);
+            this.gridRelas.Location = new System.Drawing.Point(12, 211);
             this.gridRelas.MainView = this.dataGrid;
             this.gridRelas.Name = "gridRelas";
-            this.gridRelas.Size = new System.Drawing.Size(483, 399);
+            this.gridRelas.Size = new System.Drawing.Size(348, 230);
             this.gridRelas.TabIndex = 2;
             this.gridRelas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dataGrid});
@@ -527,16 +527,40 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(824, 252, 687, 499);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1096, 612);
+            this.layoutControl1.Size = new System.Drawing.Size(798, 453);
             this.layoutControl1.TabIndex = 9;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(364, 346);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.AllowHtmlString = true;
+            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.labelControl1.Location = new System.Drawing.Point(473, 356);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Padding = new System.Windows.Forms.Padding(5);
+            this.labelControl1.Size = new System.Drawing.Size(313, 75);
+            this.labelControl1.StyleController = this.layoutControl1;
+            this.labelControl1.TabIndex = 6;
+            this.labelControl1.Text = "Nhóm sinh viên thực hiện\r\n<b>Ngô Xuân Bách</b>\r\n<b>Đinh Viết Nam</b>\r\nGiảng viên " +
+    "hướng dẫn\r\n<b>ThS Nguyễn Thị Ngọc Tú</b>";
             // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.gridResult);
-            this.panelControl1.Location = new System.Drawing.Point(499, 28);
+            this.panelControl1.Location = new System.Drawing.Point(364, 28);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(585, 453);
+            this.panelControl1.Size = new System.Drawing.Size(422, 314);
             this.panelControl1.TabIndex = 5;
             // 
             // gridResult
@@ -546,7 +570,7 @@
             this.gridResult.MainView = this.gridView2;
             this.gridResult.MenuManager = this.ribbonControl1;
             this.gridResult.Name = "gridResult";
-            this.gridResult.Size = new System.Drawing.Size(581, 449);
+            this.gridResult.Size = new System.Drawing.Size(418, 310);
             this.gridResult.TabIndex = 0;
             this.gridResult.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -571,6 +595,8 @@
             // 
             // gridColumn6
             // 
+            this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.gridColumn6.Caption = "Điểm số";
             this.gridColumn6.FieldName = "DiemSo";
             this.gridColumn6.Name = "gridColumn6";
@@ -583,7 +609,7 @@
             this.gridSongs.MainView = this.gridView1;
             this.gridSongs.MenuManager = this.ribbonControl1;
             this.gridSongs.Name = "gridSongs";
-            this.gridSongs.Size = new System.Drawing.Size(483, 153);
+            this.gridSongs.Size = new System.Drawing.Size(348, 163);
             this.gridSongs.TabIndex = 4;
             this.gridSongs.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -634,7 +660,7 @@
             this.emptySpaceItem2});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1096, 612);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(798, 453);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -642,7 +668,7 @@
             this.layoutControlItem1.Control = this.gridSongs;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(487, 173);
+            this.layoutControlItem1.Size = new System.Drawing.Size(352, 183);
             this.layoutControlItem1.Text = "Danh bài hát";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(66, 13);
@@ -650,9 +676,9 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gridRelas;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 173);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 183);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(487, 419);
+            this.layoutControlItem2.Size = new System.Drawing.Size(352, 250);
             this.layoutControlItem2.Text = "Bảng quan hệ";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(66, 13);
@@ -664,80 +690,55 @@
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem3.Control = this.panelControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(487, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(352, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(589, 473);
+            this.layoutControlItem3.Size = new System.Drawing.Size(426, 334);
             this.layoutControlItem3.Text = "Kết quả";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(66, 13);
             // 
-            // pictureBox1
+            // layoutControlItem4
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(499, 485);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 115);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.layoutControlItem4.Control = this.labelControl1;
+            this.layoutControlItem4.Location = new System.Drawing.Point(461, 344);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(317, 79);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.pictureBox1;
-            this.layoutControlItem5.Location = new System.Drawing.Point(487, 473);
+            this.layoutControlItem5.Location = new System.Drawing.Point(352, 334);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(141, 119);
+            this.layoutControlItem5.Size = new System.Drawing.Size(109, 99);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.labelControl1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(628, 492);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(448, 79);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.AllowHtmlString = true;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
-            this.labelControl1.Location = new System.Drawing.Point(640, 504);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Padding = new System.Windows.Forms.Padding(5);
-            this.labelControl1.Size = new System.Drawing.Size(444, 75);
-            this.labelControl1.StyleController = this.layoutControl1;
-            this.labelControl1.TabIndex = 6;
-            this.labelControl1.Text = "Nhóm sinh viên thực hiện\r\n<b>Ngô Xuân Bách</b>\r\n<b>Đinh Viết Nam</b>\r\nGiảng viên " +
-    "hướng dẫn\r\n<b>ThS Nguyễn Thị Ngọc Tú</b>";
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(628, 473);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(461, 334);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(448, 19);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(317, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(628, 571);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(461, 423);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(448, 21);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(317, 10);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 758);
+            this.ClientSize = new System.Drawing.Size(798, 599);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 480);
             this.Name = "FormMain";
             this.Ribbon = this.ribbonControl1;
             this.RibbonVisibility = DevExpress.XtraBars.Ribbon.RibbonVisibility.Visible;
@@ -751,6 +752,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridRelas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridResult)).EndInit();
@@ -761,9 +763,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
