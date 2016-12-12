@@ -200,41 +200,6 @@ namespace DXample
             XtraMessageBox.Show(this, "File kết quả được ghi thành công\n" + dlg.FileName, "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        private void btnTesting_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            var testdata = Importer<YeuThich>.Import();
-            if (testdata == null) return;
-            RatingPredictor recommender;
-            if (cbType.EditValue.ToString().Equals("User Based"))
-            {
-                recommender = new MyMediaLite.RatingPrediction.UserKNN();
-            }
-            else if (cbType.EditValue.ToString().Equals("Item Based"))
-            {
-                recommender = new MyMediaLite.RatingPrediction.ItemKNN();
-            }
-            else
-            {
-                XtraMessageBox.Show(this, "Invalid value " + cbType.EditValue, "Lỗi", MessageBoxButtons.OK,
-                    MessageBoxIcon.Asterisk);
-                return;
-            }
-            var train = new StaticRatings(100000);
-            var test = new StaticRatings(100000);
-            foreach (var rela in relas)
-                train.Add(rela.UserID, rela.SongID, 0.5f);
-            foreach (var rela in testdata)
-                test.Add(rela.UserID, rela.SongID, 0.5f);
-            recommender.Ratings = train;
-            recommender.Train();
-            var result = recommender.Evaluate(test);
-            var sb = new StringBuilder();
-            foreach (var t in result)
-            {
-                sb.AppendFormat("{0} - {1}\n", t.Key, t.Value);
-            }
-            XtraMessageBox.Show(sb.ToString());
-        }
+        
     }
 }
